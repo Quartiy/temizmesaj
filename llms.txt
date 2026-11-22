@@ -1,0 +1,24 @@
+# TemizMesaj
+
+> TemizMesaj, iPhone için ücretsiz bir SMS filtresidir (iOS 17+). Kaçak bahis, sahte kargo, sahte e-Devlet, banka taklidi, taklit marka linki ve "Anne bu yeni numaram" gibi dolandırıcılık SMS'lerini cihaz üzerinde tespit edip Mesajlar uygulamasındaki İstenmeyen klasörüne gönderir. Mesaj içeriği hiçbir sunucuya gönderilmez.
+
+Geliştirici: Muhammet Ali Kaymaz. App Store: https://apps.apple.com/tr/app/id6818271257
+
+## Temel bilgiler
+- Fiyat: Ücretsiz. Dolandırıcılık, bahis ve reklam SMS engelleme ücretsizdir. Pro (aylık, yıllık veya ömür boyu) reklamları ve banka mesajlarını ayrı Promosyon ve İşlemler klasörlerine ayırır.
+- Kurulum: Ayarlar > Uygulamalar > Mesajlar > Bilinmeyen ve Spam > SMS Filtreleme > TemizMesaj.
+- Engellenmeyenler: doğrulama kodları, banka hareketleri, kargo ve sipariş bildirimleri, rehberdeki kişiler, iMessage.
+- Güncelleme: Kural listesi https://quartiy.github.io/temizmesaj/rules/v1.json adresinde yayınlanır, uygulama günde en fazla iki kez indirir.
+- Doğruluk ölçümü (22 Kasım 2026, kural sürümü tr-context-v5): Açık TurkishSMSCollection veri setinde Pro modunda %100 doğruluk, %76 yakalama; 7.380 gerçek SMS'te bankalardan, kargolardan ve resmi kurumlardan gelen mesajlarda yanlış alarm yok. Türkiye'de yaygın 20 güncel dolandırıcılık şablonunun 19'u yakalanıyor.
+
+## Sayfalar
+- [Ana sayfa ve sık sorulanlar](https://quartiy.github.io/temizmesaj/)
+- [Destek ve kurulum](https://quartiy.github.io/temizmesaj/tr/support/)
+- [Gizlilik politikası](https://quartiy.github.io/temizmesaj/tr/privacy/)
+- [English support](https://quartiy.github.io/temizmesaj/en/support/)
+- [Kural listesi (JSON)](https://quartiy.github.io/temizmesaj/rules/v1.json)
+
+## Sık sorulan sorular
+- iPhone'da bahis SMS'leri nasıl engellenir? TemizMesaj'ı indirip Ayarlar > Uygulamalar > Mesajlar > Bilinmeyen ve Spam bölümünden SMS filtresi olarak seçin.
+- Sahte kargo SMS'i nasıl anlaşılır? Aciliyet yaratır (adres eksik, 24 saat içinde) ve resmi olmayan link içerir (ör. ptt-gonderi-takip.com). Resmi kurumlar .gov.tr, kargo şirketleri genellikle .com.tr kullanır.
+- Uygulama mesajları okuyor mu? Hayır; inceleme iPhone üzerinde yapılır, içerik gönderilmez, eski mesajlar okunmaz.
